@@ -1,0 +1,31 @@
+<p>blog works!</p>
+
+<div>
+    <h3>Router Link </h3>
+    <p>RouterLink: RouterLink does not trigger a full page refresh. Instead, it updates the URL in the browser's address bar and dynamically renders the appropriate component based on the configured routes. Only the necessary components and data are loaded, providing a more seamless and efficient navigation experience within the Angular application.</p>
+    <h3>Router Link</h3>
+    <p>
+        In Angular, the RouterLinkActive directive is used to apply a CSS class or other styles to an element when the associated RouterLink is active. It provides visual feedback to users, indicating the currently active route or link.
+    </p>
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of Employee">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>
+                    <button routerLink="/blog/blogDetails/{{item.id}}">Details</button>
+                    
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
